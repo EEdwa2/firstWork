@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic');
+html,body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Montserrat";
+    font-size: 16px;
+    color: #1e1e1e;
+    min-height: 100%;
+    height: 0px;
+}
+.app{
+    min-height: 100%;
+    height: 1px;
+}
+main{
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 385px;
+    min-height: 100vh;
+}
+input {
+    font-family: inherit;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+button{
+    cursor: pointer;
+    font-family: inherit;
+    color: inherit;
+}
+button:hover{
+    opacity: 0.8;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 0 30%;
+    padding: 14px 0;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 0 30%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 30%;
+    padding: 14px 0;
+    justify-content: center;
+}
+#imgLogo{
+    font-weight: 800;
+    font-size: 34px;
+    letter-spacing: 0.08em;
+    max-height: 126px;
+}
+#poweredLogo{
+    padding-top: 8px;
+}
+#poweredByText{
+    color: #a3a3a3;
+    font-size: 8px;
+}
+.employee{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 0 30%;
+    padding: 14px 0;
+    justify-content: center;
+}
+#employeeAvatar{
+    background: linear-gradient(#f2c94c, #f24c56) border-box;
+    height: 114px;
+    width: 114px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid transparent;
+}
+.employeeAbout{
+    display: inline-block;
+    margin: 0 auto;
+}
+#employeeFirstName{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 5px 0;
+}
+form{
+    display: block;
+    margin-top: 0em;
+}
+.pay{
+    background-color: #f2c94c;
+    box-shadow: 0px 0px 74px rgb(0 0 0 / 10%);
+    border-radius: 40px 40px 0 0;
+    padding: 20px 0;
+    margin-top: 14px;
+}
+.divOut{
+    margin: 0 auto;
+    position: relative;
+    width: 70%;
+    border-bottom: 1px solid #1e1e1e;
+    padding-bottom: 8px;
+    letter-spacing: 0.08em;
+    font-weight: 800;
+    font-size: 34px;
+}
+.number{
+    letter-spacing: 0.08em;
+    font-weight: 800;
+    font-size: 34px;
+}
+.tipInputOut{
+    box-sizing: border-box;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    color: #1e1e1e;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding-right: 48px;
+}
+.jointInput{
+    position: absolute;
+    white-space: nowrap;
+    top: 0;
+    width: 100%;
+}
+.inputNumber{
+    opacity: 0 !important;
+    text-align: right;
+    color: transparent;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+}
+.empty{
+    padding-right: 0px;
+}
+.tipInputOut::placeholder {
+padding-right: 0;
+font-weight: 800;
+letter-spacing: 0.02em;
+}
+.AED{
+    position: relative;
+    display: inline-block;
+    opacity: 0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    vertical-align: top;
+    padding: 0.6em 0 0 0.3em;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.AEDvisible{
+    opacity: 0.5;
+}
+.warring{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #9d1919;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin: 17px 0 29px;
+}
+.AEDbutton{
+    background: transparent;
+    border: 1px solid #1e1e1e;
+    box-sizing: border-box;
+    border-radius: 40px;
+    opacity: 0.5;
+    margin: 0 4px;
+    padding: 4px 6px;
+    min-width: 60px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+}
+.AEDbutton:active{
+    background-color: #1e1e1e;
+    color: #f2c94c;
+    opacity: 1;
+}
+.rate{
+    width: 65%;
+    margin: 0 auto;
+}
+.rateText{
+    font-size: 14px;
+    font-weight: 500;
+}
+.rateStart{
+    margin-top: 11px;
+    display: flex;
+    justify-content: space-between;
+}
+.star{
+    opacity: 0.5;
+    padding: 4px;
+    background-color: transparent;
+    border: 0;
+}
+.star.active{
+    opacity: 1
+}
+.svgStar{
+    pointer-events: none;
+}
+
+.serviceFeatures{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+.features{
+    background-color: transparent;
+    border: 0;
+    border-radius: 10px;
+    padding: 20px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.featuresSelected{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.icon{
+    display: block;
+    margin: 0 auto 5px;
+}
+.lable{
+    display: block;
+    font-weight: 600;
+    font-size: 10px;
+}
+.first{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+}
+.second{
+    font-weight: 600;
+    font-size: 10px;
+}
+.card{
+    margin: 24px auto 15px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 0;
+    color: #1e1e1e;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 27px;
+    margin: 0;
+    min-height: 40px;
+    padding: 2px 0;
+    text-align: center;
+    pointer-events: all;
+    width: 35%;
+}
+.cards{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    margin: 24px auto 15px;
+}
+.googlePay{
+    color: #fff;
+    background-color: #1e1e1e;
+    margin-right: 15px;
+}
+.googlePay svg{
+    fill: #fff;
+}
+.cardPay{
+    margin-left: 15px;
+}
+.cardIcov{
+    -webkit-padding-end: 2px;
+    padding-inline-end: 2px;
+}
