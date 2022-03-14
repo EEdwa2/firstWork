@@ -88,7 +88,7 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
     tipsAmounts.forEach(elem => {
-        const button = buildElement('button', 'AEDButton', `${elem} AED`);
+        const button = buildElement('button', 'AEDbutton', `${elem} AED`);
         button.addEventListener('click', setPredefinedTipValue.bind(null, elem));
         $predefinedTipsButtons.appendChild(button);
     });
